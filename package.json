@@ -1,0 +1,26 @@
+{
+  "name": "instagram-login-replica",
+  "version": "1.0.0",
+  "description": "Educational UI replica of Instagram login page",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "next": "14.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.5",
+    "@types/nodemailer": "^6.4.14",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "typescript": "5.3.3"
+  }
+}
+

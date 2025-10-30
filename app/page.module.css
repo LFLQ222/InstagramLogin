@@ -1,0 +1,653 @@
+.disclaimer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 48px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 935px;
+  margin: 0 auto;
+  width: 100%;
+  gap: 32px;
+  flex: 1;
+  min-height: calc(100vh - 48px - 140px);
+}
+
+.leftSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.phoneContainer {
+  width: 454px;
+  height: 618px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phoneMockup {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.rightSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  width: 100%;
+}
+
+.loginCard {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  padding: 10px 40px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 350px;
+}
+
+.logoContainer {
+  margin: 36px 0 12px 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagramLogo {
+  background-image: url('https://static.cdninstagram.com/rsrc.php/v4/yz/r/H_-3Vh0lHeK.png');
+  background-position: 0px -2959px;
+  background-size: auto;
+  width: 175px;
+  height: 51px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.errorMessage {
+  width: 100%;
+  padding: 11px 40px 11px 11px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  font-size: 13px;
+  color: #262626;
+  text-align: center;
+  line-height: 18px;
+  position: relative;
+}
+
+.errorMessage p {
+  margin: 0;
+}
+
+.closeError {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #262626;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.closeError:hover {
+  opacity: 0.7;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 24px;
+}
+
+.inputGroup {
+  width: 100%;
+}
+
+.passwordContainer {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 9px 0 7px 8px;
+  font-size: 12px;
+  line-height: 18px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background: #fafafa;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #a8a8a8;
+}
+
+.input::placeholder {
+  color: #8e8e8e;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.showPassword {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.showPassword:hover {
+  opacity: 0.7;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 7px 16px;
+  margin-top: 8px;
+  background: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  line-height: 18px;
+}
+
+.loginButton:hover:not(:disabled) {
+  background: #1877f2;
+}
+
+.loginButton:active:not(:disabled) {
+  opacity: 0.7;
+}
+
+.loginButton:disabled {
+  background: #4cb5f9;
+  opacity: 0.3;
+  cursor: default;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 18px;
+  width: 100%;
+  gap: 18px;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background: #dbdbdb;
+}
+
+.dividerText {
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.facebookLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #385185;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px;
+  transition: opacity 0.2s;
+}
+
+.facebookLogin:hover {
+  opacity: 0.7;
+}
+
+.forgotPassword {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #00376b;
+  text-align: center;
+  line-height: 14px;
+}
+
+.forgotPassword:hover {
+  color: #00376b;
+}
+
+.signupCard {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  min-width: 350px;
+}
+
+.signupCard p {
+  margin: 15px 0;
+}
+
+.signupLink {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.signupLink:hover {
+  opacity: 0.7;
+}
+
+.getApp {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.getApp p {
+  font-size: 14px;
+  color: #262626;
+  margin-bottom: 16px;
+}
+
+.appButtons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.appButton {
+  display: block;
+}
+
+.appButton img {
+  height: 40px;
+  width: auto;
+}
+
+.footer {
+  padding: 24px 20px 52px 20px;
+  max-width: 935px;
+  margin: 0 auto;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.footerLinks a {
+  font-size: 12px;
+  color: #8e8e8e;
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  color: #8e8e8e;
+  flex-wrap: wrap;
+}
+
+.languageSelector {
+  background: none;
+  border: none;
+  color: #8e8e8e;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Mobile-only elements */
+.mobileOnly {
+  display: none;
+}
+
+.desktopOnly {
+  display: block;
+}
+
+.mobileLanguageSelector {
+  display: none;
+}
+
+.mobileMeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: #262626;
+  font-size: 12px;
+  margin-top: 24px;
+}
+
+.metaLogo {
+  font-size: 16px;
+}
+
+.createAccountButton {
+  width: 100%;
+  padding: 7px 16px;
+  background: transparent;
+  color: #0095f6;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.createAccountButton:hover {
+  background: rgba(0, 149, 246, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 875px) {
+  .leftSection {
+    display: none;
+  }
+
+  .container {
+    background-color: #ffffff;
+  }
+
+  .main {
+    padding: 0;
+    min-height: 100vh;
+    background-color: #ffffff;
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+
+  .mobileLanguageSelector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px 16px 12px 16px;
+    margin-bottom: 0;
+  }
+
+  .mobileLanguageSelector .languageSelector {
+    background: transparent;
+    border: none;
+    color: #8e8e8e;
+    font-size: 14px;
+    padding: 8px 28px 8px 8px;
+    cursor: pointer;
+    text-align: center;
+    text-align-last: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238e8e8e' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    margin: 0 auto;
+  }
+
+  .rightSection {
+    max-width: 100%;
+    padding: 0;
+    gap: 0;
+  }
+
+  .loginCard {
+    background: transparent;
+    border: none;
+    padding: 0;
+    min-width: auto;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instagramLogo {
+    background-image: url('/60ed833f035dbe00046c24b6.png');
+    background-position: center;
+    background-size: contain;
+    width: 182px;
+    height: 60px;
+    background-repeat: no-repeat;
+  }
+
+  .logoContainer {
+    margin: 24px 0 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .form {
+    margin-top: 0;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .inputGroup {
+    width: 100%;
+  }
+
+  .input {
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    color: #262626;
+    padding: 9px 16px;
+    font-size: 14px;
+    height: 44px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .passwordContainer {
+    width: 100%;
+  }
+
+  .input::placeholder {
+    color: #8e8e8e;
+    font-size: 14px;
+  }
+
+  .input:focus {
+    border-color: #dbdbdb;
+    outline: none;
+  }
+
+  .loginButton {
+    margin-top: 0;
+    padding: 9px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    background: #0095f6;
+    color: white;
+    height: 44px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .loginButton:not(:disabled):hover {
+    background: #1877f2;
+  }
+
+  .loginButton:disabled {
+    background: #b2dffc;
+    opacity: 1;
+    cursor: not-allowed;
+  }
+
+  .forgotPassword {
+    color: #262626;
+    margin-top: 16px;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  .createAccountButton {
+    display: block;
+    width: calc(100% - 32px);
+    padding: 9px 16px;
+    margin: 16px auto 0;
+    background: #ffffff;
+    border: 1px solid #0095f6;
+    border-radius: 8px;
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    height: 44px;
+    box-sizing: border-box;
+    max-width: calc(100% - 32px);
+    transition: background-color 0.2s;
+  }
+
+  .createAccountButton:hover {
+    background: rgba(0, 149, 246, 0.05);
+  }
+
+  .createAccountButton:active {
+    background: rgba(0, 149, 246, 0.1);
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .facebookLogin {
+    display: none;
+  }
+
+  .signupCard {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: block;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .getApp {
+    display: none;
+  }
+
+  .mobileMeta {
+    color: #262626;
+    margin-top: 24px;
+    padding-bottom: 32px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .disclaimer {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .appButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerLinks {
+    gap: 12px 16px;
+  }
+}
+
